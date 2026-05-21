@@ -1283,6 +1283,9 @@
     function showSuccess() {
       form.style.display = 'none';
       noticeWrap.style.display = 'none';
+      const cardHeader = document.querySelector('.form-card-header');
+      cardHeader.querySelector('h3').textContent = 'Custodian Profile Updated !';
+      cardHeader.querySelector('p').style.display = 'none';
       successOverlay.classList.add('visible');
       successOverlay.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
